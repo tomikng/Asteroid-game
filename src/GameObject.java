@@ -1,6 +1,8 @@
+import java.awt.*;
+
 public interface GameObject {
     void update();
-    void render();
+    void render(Graphics g);
     double getX();
     double getY();
     double getSize();
