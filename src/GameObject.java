@@ -5,5 +5,4 @@ public interface GameObject {
     void render(Graphics g);
     double getX();
     double getY();
-    double getSize();
 }
