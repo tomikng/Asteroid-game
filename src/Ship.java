@@ -16,10 +16,10 @@ public class Ship implements GameObject {
     private double ay;
 
     // Ship shape
-    private Polygon shape;
+    private final Polygon shape;
 
-    private int WIDTH;
-    private int HEIGHT;
+    private final int WIDTH;
+    private final int HEIGHT;
 
     public Ship(int x, int y) {
         WIDTH = x*2;
@@ -58,8 +58,6 @@ public class Ship implements GameObject {
 
         // Update the position of the ship based on its velocity
         applyVelocity();
-//        System.out.println("Vx: " + vx);
-//        System.out.println("Ax: " + ax);
     }
 
     public void wrapAroundScreen(int screenWidth, int screenHeight) {

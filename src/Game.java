@@ -6,12 +6,12 @@ import java.util.ArrayList;
 
 public class Game extends JComponent implements KeyListener {
     // Array to store the game objects
-    private ArrayList<GameObject> gameObjects;
+    private final ArrayList<GameObject> gameObjects;
 
-    private Ship ship;
+    private final Ship ship;
 
     public Game(int width, int length, JFrame frame) {
-        gameObjects = new ArrayList<GameObject>();
+        gameObjects = new ArrayList<>();
 
         // Add a ship to the game
         ship = new Ship(width / 2, length/2);
